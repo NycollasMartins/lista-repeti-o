@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() 
+{
+    int numero = 3;
+    int contador = 0;
+    
+    while (contador < 5)
+    {
+        printf("%d\n", numero);
+        numero += 3;
+        contador++;
+    }
+    
+    return 0;
+}
