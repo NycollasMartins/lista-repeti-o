@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+  float hn, soma;
+  int n, i;
+
+  printf("Digite o valor de n: ");
+  scanf("%d", &n);
+
+  soma = 0.0;
+
+  for (i = 1; i <= n; i++) {
+    soma += (float) 1/i;
+  }
+
+  hn = soma;
+
+  printf("Hn = %.3f\n", hn);
+
+  return 0;
+}
