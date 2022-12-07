@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main () {
+    
+    int numero, contador;
+    
+    printf("Digite um numero positivo: ");
+    scanf("%d", &numero);
+    
+    printf("Os divisores de %d sao: ", numero);
+    
+    for (contador = 1; contador <= numero; contador++) {
+        if (numero % contador == 0) {
+            printf("%d ", contador);
+        }
+    }
+    printf("\n");
+    
+    return 0;
+}
