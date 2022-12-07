@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+int main()
+{
+    int num, contador=0;
+    float soma=0, media;
+ 
+    for(int i=0; i<10; i++)
+    {
+        printf("Insira um numero inteiro positivo: ");
+        scanf("%d", &num);
+        if(num >= 0)
+        {
+            soma += num;
+            contador++;
+        }
+    }
+    media = soma/contador;
+    printf("Media dos inteiros positivos: %.2f\n", media);
+ 
+    return 0;
+}
