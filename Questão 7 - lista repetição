@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+
+  int i, num, soma=0;
+
+  printf("Digite 10 numeros inteiros:\n");
+  for(i=0; i<10; i++) {
+    scanf("%d", &num);
+    soma = soma + num;
+  }
+
+  printf("A soma dos numeros digitados e: %d\n", soma);
+
+  return 0;
+}
