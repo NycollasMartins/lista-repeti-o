@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+	int numero, menor, maior;
+
+	printf("Digite um numero: ");
+	scanf("%d", &numero);
+
+	menor = numero;
+	maior = numero;
+
+	for(int i = 1; i < 10; i++){
+		printf("Digite um numero: ");
+		scanf("%d", &numero);
+
+		if(numero < menor)
+			menor = numero;
+
+		if(numero > maior)
+			maior = numero;
+	}
+
+	printf("Menor valor lido: %d\n", menor);
+	printf("Maior valor lido: %d\n", maior);
+
+	return 0;
+}
